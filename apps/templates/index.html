@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+<div class="row">
+        <div class="col-md-12 text-center">
+            <h1>Welcome to GITAM.</h1>
+            <h3>Let's get started.</h3>
+            {% if login %}
+            <p>Already registered? <a href=" {{ url_for('login.html') }}">Login</a></p>
+            {% endif %}
+            </div>
+</div>
+{% endblock %}
